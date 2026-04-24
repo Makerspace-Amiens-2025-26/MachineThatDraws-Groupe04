@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.home {
+    min-height: 90vh;
+    background: linear-gradient(to bottom, #0A1F44, #071530); /* Dégradé de couleur sur l'image */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 230px;
+    width: 100%;
+}
+
+
+.menu {
+    background: linear-gradient(to bottom, #0A1F44, #071530);
+    border-bottom: 2px solid rgba(0,0,0,1);
+}
+
+
+
+
+.links{
+    display: flex;
+}
+
+
+
+
+.links li {
+    margin: 20px;
+}
+.links li a{
+    color: white;
+    position: relative;
+}
+.links li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #f9ad4a;    /* Sous lignage des titres */
+    height: 4px;
+    width: 0%;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.links li a:hover:after{
+    width: 100%;
+}
+
+.introduction {
+    margin: 40px;
+    margin-top: 100px;
+}
+
+details {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+summary {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.Objectifs, .Cahier, .Tuto{
+    margin: 40px;
+    margin-top: 10px;
+}
+
+details {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+summary {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+}
+
+/* COLONNE GAUCHE IMAGE */
+.sidebar {
+    width: 30%;              /* largeur de la partie gauche */
+    height: 100vh;           /* prend toute la hauteur de l'écran */
+    background-image: url("Assets/img4.jpeg"); /* ton image */
+    background-size: cover;  /* remplit tout */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PARTIE DROITE */
+.main {
+    margin-top: 100px;
+    width: 70%;
+    padding: 20px;
+}
